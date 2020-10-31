@@ -10,4 +10,9 @@ public class MainClassTest extends MainClass{
         Assert.assertTrue("Number != 14", actualNumber == 14);
 
     }
+
+    @Test
+    public void testGetClassNumber(){
+        Assert.assertTrue("Returned number <= 45", this.getClassNumber() > 45);
+    }
 }
